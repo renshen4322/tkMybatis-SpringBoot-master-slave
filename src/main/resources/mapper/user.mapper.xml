@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.mmooo.dao.UserMapper">
+<select id="findById" resultType="cn.mmooo.model.User" parameterType="java.lang.Integer">
+    select id,name from user233 where id=#{id}
+</select>
+    <select id="findAll" resultType="cn.mmooo.model.User">
+    select id,name from user233
+</select>
+</mapper>
